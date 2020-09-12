@@ -37,7 +37,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>com.sharma.ninoUI.App</mainClass>
+                    <mainClass>com.sharma.ninoUI.FXMLMainController</mainClass>
                 </configuration>
             </plugin>
         </plugins>

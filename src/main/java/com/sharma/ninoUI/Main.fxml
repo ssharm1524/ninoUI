@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fx:id="root" prefHeight="435.0" prefWidth="564.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sharma.ninoUI.FXMLMainController">
+   <children>
+      <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2" prefHeight="435.0" prefWidth="564.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="propList" prefHeight="408.0" prefWidth="109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text layoutX="12.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Comms:" wrappingWidth="152.13671875" />
+                  <Text layoutX="12.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Comms:" wrappingWidth="90.13671875" />
+                  <Text layoutX="12.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Processing Code:" wrappingWidth="108.99999260902405" />
+                  <Text layoutX="12.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum Instance:" wrappingWidth="143.13671875" />
+                  <Text layoutX="12.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Instance:" wrappingWidth="130.13671875" />
+                  <Text layoutX="12.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Library Version" wrappingWidth="163.13671875" />
+                  <Text layoutX="12.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Library Name:" wrappingWidth="116.13671875" />
+                  <Text layoutX="12.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Namespace:" wrappingWidth="163.13671919703484" />
+                  <Text layoutX="12.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Function:" wrappingWidth="90.13671875" />
+                  <Text layoutX="250.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Library Version:" wrappingWidth="130.13671262562275" />
+                  <Text layoutX="250.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Library Name:" wrappingWidth="143.1367235071957" />
+                  <Text layoutX="250.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Namespace:" wrappingWidth="130.13671262562275" />
+                  <Text layoutX="250.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Function:" wrappingWidth="90.13671875" />
+                  <Text layoutX="250.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output Signature:" wrappingWidth="130.13671787828207" />
+                  <Text layoutX="250.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="External Signature:" wrappingWidth="152.13671183871338" />
+                  <Text layoutX="250.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input to Argument Conversion Type:" wrappingWidth="152.13671586848795" />
+                  <Text layoutX="250.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input to Argument Mapping Code:" wrappingWidth="130.13670632243156" />
+                  <TextField layoutX="128.0" layoutY="142.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="135.0" layoutY="182.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="135.0" layoutY="222.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="135.0" layoutY="262.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="128.0" layoutY="302.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="110.0" layoutY="342.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="338.0" layoutY="30.0" prefHeight="16.0" prefWidth="108.0" />
+                  <TextField layoutX="378.0" layoutY="62.0" prefHeight="26.0" prefWidth="62.0" />
+                  <TextField layoutX="371.0" layoutY="102.0" prefHeight="26.0" prefWidth="71.0" />
+                  <TextField layoutX="315.0" layoutY="155.0" prefHeight="26.0" prefWidth="109.0" />
+                  <TextField layoutX="358.0" layoutY="190.0" prefHeight="26.0" prefWidth="71.0" />
+                  <TextField layoutX="367.0" layoutY="222.0" prefHeight="26.0" prefWidth="71.0" />
+                  <Button fx:id="inputCommsBtn" layoutX="109.0" layoutY="23.0" mnemonicParsing="false" onAction="#inputCommsBtnAction" text="inputCommsBtn" />
+                  <Button fx:id="outputCommsBtn" layoutX="68.0" layoutY="59.0" mnemonicParsing="false" onAction="#outputCommsBtnAction" text="outputCommsBtn" />
+                  <Button fx:id="processingCodeBtn" layoutX="122.0" layoutY="100.0" mnemonicParsing="false" onAction="#processingCodeBtnAction" prefHeight="31.0" prefWidth="121.0" text="processingCodeBtn" />
+                  <Button fx:id="iaConversionTypeBtn" layoutX="364.0" layoutY="268.0" mnemonicParsing="false" onAction="#iaConversionTypeBtnAction" prefHeight="31.0" prefWidth="71.0" text="iaConversionTypeBtn" />
+                  <Button fx:id="iaMappingCodeBtn" layoutX="367.0" layoutY="328.0" mnemonicParsing="false" onAction="#iaMappingCodeBtnAction" prefHeight="31.0" prefWidth="71.0" text="iaMappingCodeBtn" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</fx:root>

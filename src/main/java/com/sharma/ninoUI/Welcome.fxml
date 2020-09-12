@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="435.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sharma.ninoUI.FXMLWelcomeController">
+   <children>
+      <StackPane>
+         <children>
+            <ImageView fitHeight="512.0" fitWidth="896.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/GatorEyes.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nanoservice Infrastructure Notation (NINo)" textAlignment="CENTER" wrappingWidth="892.13671875" StackPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

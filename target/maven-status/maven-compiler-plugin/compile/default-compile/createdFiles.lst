@@ -1,3 +1,4 @@
-module-info.class
 com\sharma\ninoUI\App.class
+com\sharma\ninoUI\FXMLMainController.class
 com\sharma\ninoUI\SystemInfo.class
+module-info.class
