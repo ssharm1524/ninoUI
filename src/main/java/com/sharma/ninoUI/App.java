@@ -1,11 +1,14 @@
 package com.sharma.ninoUI;
 
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.net.URL;
 
 /**
  * JavaFX App
@@ -20,7 +23,8 @@ public class App extends Application {
 	
     @Override
     public void start(Stage stage) throws Exception{
-    	Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+	    URL resource = getClass().getResource("/com/sharma/ninoUI/Main.fxml");
+	    Parent root = FXMLLoader.load(resource);
     	
         Scene scene = new Scene(root);
         
